@@ -176,8 +176,6 @@
     normalState: normal-unshaded
     denyState: deny-unshaded
     loopDeny: false
-  - type: Anchorable
-  - type: Pullable
   - type: Advertise
     pack: BoozeOMatAds
   - type: SpeakOnUIClosed
