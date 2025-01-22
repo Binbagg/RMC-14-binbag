@@ -61,6 +61,8 @@
     layers:
     - state: "off"
     - state: "normal-unshaded"
+  - type: Transform
+    anchored: true
   - type: Anchorable
   - type: Pullable
   - type: AccessReader
