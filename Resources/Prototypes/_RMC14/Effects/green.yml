@@ -1,0 +1,44 @@
+- type: entity
+  id: RMCEffectXenoTelegraphGreen
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TimedDespawn
+    lifetime: 10
+  - type: Sprite
+    drawdepth: Effects
+    sprite: _RMC14/Effects/xeno_telegraph.rsi
+    color: "#008000"
+    noRot: true
+    state: xeno_telegraph_base
+  - type: EffectVisuals
+  - type: Tag
+    tags:
+    - HideContextMenu
+
+
+- type: entity
+  parent: RMCEffectXenoTelegraphGreen
+  id: RMCEffectXenoTelegraphRed
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TimedDespawn
+    lifetime: 0.25
+  - type: Sprite
+    color: "#A50824"
+
+- type: entity
+  parent: RMCEffectXenoTelegraphRed
+  id: RMCEffectXenoTelegraphRedSmall
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    state: xeno_telegraph_base_small
+
+- type: entity
+  parent: RMCEffectXenoTelegraphRed
+  id: RMCEffectXenoTelegraphRedEmpower
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TimedDespawn
+    lifetime: 1
+
